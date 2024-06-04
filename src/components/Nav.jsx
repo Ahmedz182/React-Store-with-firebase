@@ -9,7 +9,7 @@ const Nav = () => {
           <span className="text-darkGreen text-2xl">Shop</span>
         </span>
 
-        <ul className="flex flex-wrap justify-between gap-x-5  font-semibold ">
+        <ul className="flex flex-wrap justify-between gap-x-5  font-semibold sm:hidden">
           <li className="cursor-pointer menu-item">Home</li>
           <li className="cursor-pointer menu-item">About us</li>
           <li className="cursor-pointer menu-item">Products</li>

@@ -39,13 +39,14 @@ const HeroSection = () => {
         <div className="flex items-center justify-center">
           <div className="flex flex-col gap-2">
             <span
-              className="bg-white rounded-3xl px-4 py-2 cursor-pointer  font-medium"
+              className="bg-white rounded-3xl px-4 py-2 cursor-pointer flex items-center  font-medium "
               onClick={showCategory}>
-              <i className="ri-menu-2-line"></i> &nbsp; All Categories
+              <i className="ri-menu-2-line"></i> &nbsp;
+              <p className="sm:hidden">All Categories</p>
             </span>
 
             {CategoryItem && (
-              <span className="absloute fixed left-28 mt-12 pt-3 items-center bg-lightGreen py-2 rounded-xl transition ease-in">
+              <span className="absloute fixed left-28 sm:left-16 mt-12 pt-3 items-center bg-lightGreen py-2 rounded-xl transition ease-in">
                 {categories.map((category) => (
                   <p
                     className="px-4 font-medium pb-2 cursor-pointer hover:bg-white/30a transition ease-in-out hover:translate-x-1"

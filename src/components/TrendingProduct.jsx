@@ -30,7 +30,7 @@ const TrendingProduct = () => {
         <p className="text-darkBlue text-2xl  font-semibold pb-8 pt-12 leading-tight text-center">
           <sapn className="text-green font-bold"> Trending</sapn> Products
         </p>
-        <div className="flex justify-between flex-wrap px-28">
+        <div className="flex justify-between flex-wrap px-28 sm:justify-center">
           {item.map(({ title, img }) => {
             return (
               <>
