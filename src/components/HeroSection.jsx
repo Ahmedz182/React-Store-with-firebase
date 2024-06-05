@@ -74,10 +74,10 @@ const HeroSection = () => {
 
       <div className="flex  flex-row flex-wrap ps-16 sm:ps-8 items-center  mt-2 sm:flex-col">
         <div className="flex flex-col gap-1 sm:gap-3 mt-4 w-[45dvw] sm:w-[98%] ">
-          <span className="bg-lightGreen/15  rounded-3xl w-[70%] sm:w-[100%]  ps-6 text-darkBlue font-semibold p-2">
+          <span className="bg-lightGreen/15  rounded-l-3xl rounded-r-lg w-[70%] sm:w-[100%]  ps-6 text-darkBlue font-semibold p-2">
             <strong>30% </strong> Off on groceires
           </span>
-          <p className="text-7xl font-semibold text-darkBlue sm:text-6xl leading-tight ">
+          <p className="text-7xl font-semibold tracking-wider text-darkBlue sm:text-6xl leading-tight ">
             <strong> Shop smarter</strong>
             <br />
             <span className="text-7xl font-light sm:text-6xl leading-tight   text-darkBlue ">
@@ -103,7 +103,7 @@ const HeroSection = () => {
 
         <div className="bg-img w-[45dvw] ms-5 sm:ms-0 sm:me-2 mt-8 sm:w-[98%] ">
           <img src={img} alt="shopImg" className="women-img" />
-          <div className="card bg-white  rounded-lg flex mt-[-100px] px-5 items-center">
+          <div className="card bg-white shadow-lg rounded-lg flex mt-[-100px] px-5 items-center">
             <span>
               <img
                 src="https://img.freepik.com/premium-vector/avatar-icon002_750950-52.jpg"
@@ -111,7 +111,7 @@ const HeroSection = () => {
               />
             </span>
             <span className="px-5 ms-[-10px]">
-              <p className="font-bold">Myra Rana</p>
+              <p className="font-bold">Myra Rana ✨</p>
               <p className="sm:text-sm">
                 Saved my a lot of Time and money.
                 <span className="text-red"> &#10084;</span>

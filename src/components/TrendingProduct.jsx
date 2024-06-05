@@ -27,7 +27,7 @@ const TrendingProduct = () => {
   return (
     <>
       <div className="py-10">
-        <p className="text-darkBlue text-2xl  font-semibold pb-8 pt-12 leading-tight text-center">
+        <p className="text-darkBlue text-2xl  tracking-wider font-semibold pb-8 pt-12 leading-tight text-center">
           <sapn className="text-green font-bold"> Trending</sapn> Products
         </p>
         <div className="flex justify-between flex-wrap gap-3 px-28 sm:px-10 sm:justify-center">
