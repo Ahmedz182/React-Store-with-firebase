@@ -51,3 +51,6 @@
   position: absolute;
   z-index: 1000;
 }
+.navbar {
+  z-index: 20000;
+}

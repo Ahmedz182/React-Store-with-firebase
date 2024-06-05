@@ -2,8 +2,8 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <div>
-      <div className="flex px-8 py-5 items-center justify-between">
+    <div className=" sticky top-0 bg-white navbar">
+      <div className="flex  px-8 py-5 items-center justify-between">
         <span className="cursor-pointer">
           <span className="text-2xl font-bold">Quick</span>
           <span className="text-darkGreen text-2xl">Shop</span>
