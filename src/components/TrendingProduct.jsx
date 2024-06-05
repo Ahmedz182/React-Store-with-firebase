@@ -30,7 +30,7 @@ const TrendingProduct = () => {
         <p className="text-darkBlue text-2xl  font-semibold pb-8 pt-12 leading-tight text-center">
           <sapn className="text-green font-bold"> Trending</sapn> Products
         </p>
-        <div className="flex justify-between flex-wrap px-28 sm:justify-center">
+        <div className="flex justify-between flex-wrap gap-3 px-28 sm:px-10 sm:justify-center">
           {item.map(({ title, img }) => {
             return (
               <>
@@ -39,7 +39,7 @@ const TrendingProduct = () => {
                     <img
                       src={img}
                       alt={title}
-                      className="aspect-square p-3 object-contain w-52"
+                      className="aspect-square p-3 object-contain w-52 sm:w-32 "
                     />
                   </div>
                   <p className="text-xl text-darkBlue/90 font-medium py-2">

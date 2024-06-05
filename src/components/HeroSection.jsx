@@ -46,7 +46,7 @@ const HeroSection = () => {
             </span>
 
             {CategoryItem && (
-              <span className="absloute fixed left-28 sm:left-16 mt-12 pt-3 items-center bg-lightGreen py-2 rounded-xl transition ease-in">
+              <span className="absloute fixed left-[9dvw]  mt-12 pt-3 items-center bg-lightGreen py-2 rounded-xl transition ease-in">
                 {categories.map((category) => (
                   <p
                     className="px-4 font-medium pb-2 cursor-pointer hover:bg-white/30a transition ease-in-out hover:translate-x-1"
@@ -72,7 +72,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex  flex-row flex-wrap ps-16 items-center  mt-2 sm:flex-col">
+      <div className="flex  flex-row flex-wrap ps-16 sm:ps-8 items-center  mt-2 sm:flex-col">
         <div className="flex flex-col gap-1 sm:gap-3 mt-4 w-[45dvw] sm:w-[98%] ">
           <span className="bg-lightGreen/15  rounded-3xl w-[70%] sm:w-[100%]  ps-6 text-darkBlue font-semibold p-2">
             <strong>30% </strong> Off on groceires
@@ -93,7 +93,7 @@ const HeroSection = () => {
               {TEXTS[index % TEXTS.length]}
             </TextTransition>
           </p>
-          <p className="text-xl font-medium mt-10">
+          <p className="text-xl sm:text-lg font-medium mt-10 sm:mt-5 ">
             Save time,skip the lines. We've got you covered.
           </p>
           <button className="bg-green rounded-xl px-5 py-3 mt-6 w-40 text-white font-semibold  transition ease-linear hover:scale-105">
@@ -112,7 +112,7 @@ const HeroSection = () => {
             </span>
             <span className="px-5 ms-[-10px]">
               <p className="font-bold">Myra Rana</p>
-              <p>
+              <p className="sm:text-sm">
                 Saved my a lot of Time and money.
                 <span className="text-red"> &#10084;</span>
               </p>
