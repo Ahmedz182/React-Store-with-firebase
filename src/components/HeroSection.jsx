@@ -16,7 +16,6 @@ const HeroSection = () => {
   ];
   const showCategory = () => {
     if (!CategoryItem) {
-      // Assuming `isSet` is a property on CategoryItem
       setCategoryItem(true);
     } else {
       setCategoryItem(false);

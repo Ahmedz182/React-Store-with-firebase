@@ -4,11 +4,11 @@ import BuyNow from "./BuyNow";
 const DealOfTheWeek = () => {
   return (
     <>
-      <div className="pb-5">
+      <div className="pb-5 ">
         <p className="text-darkBlue text-2xl font-black  pb-8 pt-12 tracking-wider text-center">
           Deal Of The Week
         </p>
-        <div className="flex flex-wrap px-16 gap-8 sm:gap-y-5 sm:flex-col justify-center">
+        <div className="py-10 flex flex-wrap px-16 gap-8 sm:gap-y-5 sm:flex-col justify-center">
           <div className="flex transition ease-in hover:bg-green/30 sm:items-center rounded-3xl  p-2">
             <div className="sm:w-[40%]  w-60  overflow-hidden rounded-l-3xl sm:rounded-2xl">
               <img
