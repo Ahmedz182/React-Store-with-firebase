@@ -10,8 +10,8 @@ const Item = ({ title, price, images }) => {
             src={images}
             alt={title}
           />
-          <span className="flex justify-around items-center  py-4">
-            <p className="font-light text-xl text-darkBlue tracking-wider">
+          <span className="flex justify-between ps-6 items-center  py-4">
+            <p className="font-light text-xl text-darkBlue tracking-wider w-1/2 sm:w-2/3">
               {title}
             </p>
             <p className="font-medium">$ {price}</p>
