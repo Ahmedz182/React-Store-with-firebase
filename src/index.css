@@ -54,3 +54,12 @@
 .navbar {
   z-index: 20000;
 }
+
+.bgBannerSignup {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 11%,
+    rgba(177, 249, 198, 1) 59%
+  );
+}

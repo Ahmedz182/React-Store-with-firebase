@@ -4,6 +4,7 @@ import TrendingProduct from "../../components/TrendingProduct";
 import DealOfTheWeek from "../../components/DealOfTheWeek";
 import RecentProducts from "../../components/RecentProducts";
 import Banner from "../../components/Banner";
+import BannerSignUp from "../../components/BannerSignUp";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <DealOfTheWeek />
       <RecentProducts />
       <Banner />
+      <BannerSignUp />
     </>
   );
 };
