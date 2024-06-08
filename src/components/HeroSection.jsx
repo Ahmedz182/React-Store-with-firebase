@@ -101,7 +101,7 @@ const HeroSection = () => {
         </div>
 
         <div className="bg-img w-[45dvw] ms-5 sm:ms-0 sm:me-2 mt-8 sm:w-[98%] ">
-          <img src={img} alt="shopImg" className="women-img" />
+          <img src={img} alt="shopImg" loading="lazy" className="women-img" />
           <div className="card bg-white shadow-lg rounded-lg flex mt-[-100px] px-5 items-center">
             <span>
               <img

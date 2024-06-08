@@ -39,6 +39,7 @@ const TrendingProduct = () => {
                     <img
                       src={img}
                       alt={title}
+                      loading="lazy"
                       className="aspect-square p-3 object-contain w-52 sm:w-32 "
                     />
                   </div>
