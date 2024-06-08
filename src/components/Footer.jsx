@@ -33,6 +33,12 @@ const Footer = () => {
           <iframe src="https://lottie.host/embed/2d35f8d8-647d-4e01-8d1d-7f02bb692b68/ajRjoOq7uV.json"></iframe>
         </div>
       </div>
+      <p className="text-center text-white bg-darkBlue pb-4">
+        All rights Reserved{" "}
+        <span className="font-bold">
+          Quick<span className="text-green">Shop</span>
+        </span>
+      </p>
     </>
   );
 };

@@ -3,7 +3,7 @@ import BuyNow from "./BuyNow";
 const Item = ({ title, price, images }) => {
   return (
     <>
-      <div className="transition ease-in hover:translate-y-[-0.75rem] hover:bg-lightGreen/40">
+      <div className="transition ease-in hover:translate-y-[-0.75rem] ">
         <div className="rounded-xl  cursor-pointer overflow-hidden w-[20dvw] sm:w-[40dvw] flex flex-col">
           <img
             className="rounded-t-xl aspect-square"
