@@ -32,6 +32,7 @@ const HeroSection = () => {
     );
     return () => clearTimeout(intervalId);
   }, []);
+
   return (
     <>
       <div className="bg-lightGreen/20 p-2">
