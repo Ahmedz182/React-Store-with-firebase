@@ -10,7 +10,12 @@ const Shop = () => {
         </h1>
         <div className="py-10 px-8 flex flex-wrap gap-5 justify-center">
           {dummyProduct.map(({ title, price, images }) => (
-            <Item key={title} title={title} images={images} price={price} />
+            <Item
+              key={title}
+              title={title}
+              images={images.slice(0, 1)}
+              price={price}
+            />
           ))}
         </div>
       </div>

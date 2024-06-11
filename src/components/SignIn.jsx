@@ -36,7 +36,7 @@ const SignIn = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 name="password"
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => setpassword(e.target.value)}
                 className="border-b-[1px] px-2 border-b-darkBlue/70 h-8"
                 id="2"
                 placeholder="Enter Your Password"
