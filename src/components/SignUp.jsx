@@ -2,8 +2,17 @@ import React, { useState } from "react";
 
 const SignUp = () => {
   const [email, setemail] = useState(" ");
-  const [password, setpassword] = useState(" ");
+  const [password, setPassword] = useState(" ");
   const [showPassword, setShowPassword] = useState(false);
+
+  const HandelClick = (e) => {
+    e.preventDefault();
+    if (password.includes(" ")) {
+      console.log("Password has space");
+    }
+    console.log("Email is " + email + " and password if " + password);
+  };
+
   return (
     <>
       <div className="w-[75dvw] rounded-xl shadow-lg flex  flex-col  px-10 p-4 gap-6 pt-10">
@@ -15,7 +24,9 @@ const SignUp = () => {
               alt="bg-Signin"
             />
           </div>
-          <form className="flex flex-col gap-4 w-1/2 sm:w-full pb-10">
+          <form
+            className="flex flex-col gap-4 w-1/2 sm:w-full pb-10"
+            onSubmit={HandelClick}>
             <p className="text-3xl text-darkBlue font-bold -tracking-tighter ">
               Create An Account
             </p>
@@ -28,7 +39,7 @@ const SignUp = () => {
                 type="text"
                 name="name"
                 className="border-b-[1px] px-2 border-b-darkBlue/70 h-8"
-                id="1"
+                id="0"
                 placeholder="Ahmed Fayyaz"
               />
             </div>

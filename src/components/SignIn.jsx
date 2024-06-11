@@ -4,6 +4,14 @@ const SignIn = () => {
   const [email, setemail] = useState(" ");
   const [password, setpassword] = useState(" ");
   const [showPassword, setShowPassword] = useState(false);
+
+  const HandelClick = (e) => {
+    e.preventDefault();
+    if (password.includes(" ")) {
+      console.log("Password has space");
+    }
+    console.log("Email is " + email + " and password if " + password);
+  };
   return (
     <>
       <div className="w-[75dvw] rounded-xl shadow-lg flex  flex-col  px-10 p-4 gap-6 pt-10">
@@ -12,7 +20,9 @@ const SignIn = () => {
         </p>
         <p className="text-darkBlue/30">Please Login Here.</p>
         <div className="flex">
-          <form className="flex flex-col gap-4 w-1/2 sm:w-full pb-10">
+          <form
+            className="flex flex-col gap-4 w-1/2 sm:w-full pb-10"
+            onSubmit={HandelClick}>
             <div className="flex flex-col gap-4 ">
               <label htmlFor="Email" className="font-medium">
                 Email Address :

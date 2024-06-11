@@ -18,9 +18,12 @@ const Account = () => {
         <div className="flex flex-col items-center justify-center my-10">
           {Account ? <SignIn /> : <SignUp />}
         </div>
-
-        <p className="text-center">
-          Not Yet Registered?{" "}
+        <p className="  text-center">
+          {Account ? (
+            <p className="text-center"> Not Yet Registered?</p>
+          ) : (
+            <p className="text-center"> Login to exisiting Account?</p>
+          )}
           <span
             className="font-bold cursor-pointer hover:border-b-2 transition ease-in text-darkBlue"
             onClick={() => {
