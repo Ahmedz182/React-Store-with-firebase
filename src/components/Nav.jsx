@@ -16,7 +16,9 @@ const Nav = () => {
             <li className="cursor-pointer menu-item">Home</li>
           </Link>
           <li className="cursor-pointer menu-item">About us</li>
-          <li className="cursor-pointer menu-item">Products</li>
+          <Link to="/Shop">
+            <li className="cursor-pointer menu-item">Products</li>
+          </Link>
           <li className="cursor-pointer menu-item">Contact us</li>
         </ul>
 

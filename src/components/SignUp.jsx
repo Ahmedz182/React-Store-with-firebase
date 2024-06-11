@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SignUp = () => {
+  const [email, setemail] = useState(" ");
+  const [password, setpassword] = useState(" ");
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <>
       <div className="w-[75dvw] rounded-xl shadow-lg flex  flex-col  px-10 p-4 gap-6 pt-10">
@@ -36,6 +39,9 @@ const SignUp = () => {
               <input
                 type="email"
                 name="email"
+                onChange={(e) => {
+                  setemail(e.target.value);
+                }}
                 className="border-b-[1px] px-2 border-b-darkBlue/70 h-8"
                 id="1"
                 placeholder="xyz@provider.com"
@@ -47,14 +53,21 @@ const SignUp = () => {
               </label>
 
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
+                onChange={(e) => setPassword(e.target.value)}
                 className="border-b-[1px] px-2 border-b-darkBlue/70 h-8"
                 id="2"
                 placeholder="Enter Your Password"
               />
               <span className="flex items-center ">
-                <input type="checkbox" name="showText" id="show" />
+                <input
+                  type="checkbox"
+                  name="showText"
+                  id="show"
+                  checked={showPassword}
+                  onChange={() => setShowPassword(!showPassword)}
+                />{" "}
                 <label htmlFor="showPass" className="ms-2">
                   Show Password
                 </label>
