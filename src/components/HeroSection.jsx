@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import img from "/women-shoppingwomen.png";
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   const TEXTS = ["Get it delivered.", "Get it ordered.", "Get it Shipped."];
   const COLORS = ["text-darkGreen ", "text-red", "text-purple"]; // Add your desired colors here
@@ -96,9 +97,12 @@ const HeroSection = () => {
           <p className="text-xl sm:text-lg font-medium mt-10 sm:mt-5 ">
             Save time,skip the lines. We've got you covered.
           </p>
-          <button className="bg-green rounded-xl px-5 py-3 mt-6 w-40 text-white font-semibold  transition ease-linear hover:scale-105">
-            Shop Now
-          </button>
+
+          <Link to="/Shop">
+            <button className="bg-green rounded-xl px-5 py-3 mt-6 w-40 text-white font-semibold  transition ease-linear hover:scale-105">
+              Shop Now
+            </button>
+          </Link>
         </div>
 
         <div className="bg-img w-[45dvw] ms-5 sm:ms-0 sm:me-2 mt-8 sm:w-[98%] ">

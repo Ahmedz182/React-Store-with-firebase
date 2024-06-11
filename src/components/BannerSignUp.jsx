@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BannerSignUp = () => {
   return (
@@ -11,9 +12,12 @@ const BannerSignUp = () => {
           <p className="text-darkBlue text-4xl tracking-wider leading-normal font-bold">
             SignUp for exclusive Offers & Discounts
           </p>
-          <button className="bg-green text-white rounded-lg hover:scale-95 transition ease-in my-5 px-16 py-2">
-            SignUp
-          </button>
+
+          <Link to="/Account">
+            <button className="bg-green text-white rounded-lg hover:scale-95 transition ease-in my-5 px-16 py-2">
+              SignUp
+            </button>
+          </Link>
         </div>
       </div>
     </>
